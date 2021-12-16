@@ -86,6 +86,7 @@ body {
   padding: 6% 15%;
   border-radius: 30px;
   justify-self: flex-end;
+  cursor: pointer;
 }
 
 .card--orange > .card__btn {
@@ -96,6 +97,22 @@ body {
 }
 .card--green > .card__btn {
   color: var(--very-dark-cyan);
+}
+
+.card__btn:hover {
+  border: 2px solid var(--transparent-white);
+  color: var(--transparent-white);
+  margin: -2px;
+}
+
+.card--orange > .card__btn:hover {
+  background-color: var(--bright-orange);
+}
+.card--blue > .card__btn:hover {
+  background-color: var(--dark-cyan);
+}
+.card--green > .card__btn:hover {
+  background-color: var(--very-dark-cyan);
 }
 
 .attribution {
