@@ -1,3 +1,5 @@
+/* Set up */
+
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -6,7 +8,6 @@
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --very-light-gray: hsl(0, 0%, 95%);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,10 @@
 html {
   font-size: 62.5%;
 }
+
+/* _____________________________ */
+
+/* Main Design */
 
 body {
   font-size: 1.6rem;
@@ -99,6 +104,8 @@ body {
   color: var(--very-dark-cyan);
 }
 
+/* Selectors */
+
 .card__btn:hover {
   border: 2px solid var(--transparent-white);
   color: var(--transparent-white);
@@ -115,13 +122,18 @@ body {
   background-color: var(--very-dark-cyan);
 }
 
+/* Credits */
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-top: 20px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Queries for medium size screens */
 
 @media (min-width: 640px) and (max-width: 1040px) {
   .container {
@@ -147,6 +159,8 @@ body {
   }
 }
 
+/* Queries for small laptop screens / Tablets */
+
 @media (min-width: 481px) and (max-width: 640px) {
   .container {
     max-width: 80%;
@@ -170,12 +184,14 @@ body {
   }
 }
 
+/* Queries for mobile :D */
+
 @media screen and (max-width: 481px) {
   body {
-    display: flow-root;
+    display: flow-root; /* quick trick to avoid collapsing margins screwing my top view :/ */
   }
   .container {
-    margin: auto;
+    margin: auto; /* Thanks to flow-root margin auto fixes any issues with the view/container position */
     margin-top: 20px;
     flex-direction: column;
     max-width: 60%;
