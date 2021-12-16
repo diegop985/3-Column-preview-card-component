@@ -126,8 +126,8 @@ body {
 @media (min-width: 640px) and (max-width: 1040px) {
   .container {
     max-width: 80%;
-    min-width: 58rem;
-    height: 40rem;
+    min-width: 65rem;
+    height: 45rem;
     margin: 0 auto 0 auto;
   }
   .card__icon {
@@ -167,5 +167,50 @@ body {
   .card__btn {
     font-size: 1rem;
     padding: 2% 7%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  body {
+    display: flow-root;
+  }
+  .container {
+    margin: auto;
+    margin-top: 20px;
+    flex-direction: column;
+    max-width: 60%;
+    min-width: 26rem;
+    height: 100.4rem;
+    justify-items: start;
+  }
+  .card {
+    height: 34rem;
+    padding: 13% 18%;
+  }
+  .card__icon {
+    width: 4.5rem;
+  }
+  .card__title {
+    font-size: 2.8rem;
+  }
+  .card__p {
+    font-size: 1.2rem;
+    padding-bottom: 10%;
+    line-height: 2.2rem;
+  }
+  .card__btn {
+    font-size: 1.2rem;
+    padding: 5% 8%;
+  }
+  .card--orange {
+    background-color: var(--bright-orange);
+    border-end-start-radius: 0px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+  }
+  .card--green {
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-start-end-radius: 0px;
   }
 }
