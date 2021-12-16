@@ -28,7 +28,7 @@ body {
 }
 .container {
   width: 90rem;
-  height: 55rem;
+  height: 50rem;
   display: flex;
   font-family: "Lexend Deca", sans-serif;
   border-radius: 20px;
@@ -73,7 +73,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  padding-bottom: 4%;
+  padding-bottom: 35%;
 }
 
 .card__btn {
@@ -121,4 +121,51 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) and (max-width: 1040px) {
+  .container {
+    max-width: 80%;
+    min-width: 58rem;
+    height: 40rem;
+    margin: 0 auto 0 auto;
+  }
+  .card__icon {
+    width: 4.5rem;
+  }
+  .card__title {
+    font-size: 3.4rem;
+  }
+  .card__p {
+    font-size: 1.4rem;
+    padding-bottom: 10%;
+    line-height: 2.2rem;
+  }
+  .card__btn {
+    font-size: 1.5rem;
+    padding: 5% 13%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  .container {
+    max-width: 80%;
+    min-width: 49rem;
+    height: 33rem;
+  }
+  .card__icon {
+    width: 3.5rem;
+  }
+  .card__title {
+    font-size: 3rem;
+  }
+  .card__p {
+    font-size: 1rem;
+    padding-bottom: 10%;
+    line-height: 2rem;
+  }
+  .card__btn {
+    font-size: 1rem;
+    padding: 2% 7%;
+  }
 }
